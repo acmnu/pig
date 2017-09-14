@@ -129,6 +129,11 @@
       <artifact name="hadoop-hdfs" ext="jar" />
       <artifact name="hadoop-hdfs" type="tests" ext="jar" m:classifier="tests" />
     </dependency>
+    <dependency org="org.apache.hadoop" name="hadoop-hdfs-client"
+      rev="${hadoop-hdfs.version}" conf="hadoop2->master">
+      <artifact name="hadoop-hdfs-client" ext="jar" />
+      <artifact name="hadoop-hdfs-client" type="tests" ext="jar" m:classifier="tests" />
+    </dependency>
     <dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-core" rev="${hadoop-mapreduce.version}"
       conf="hadoop2->master"/>
     <dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient" rev="${hadoop-mapreduce.version}"
